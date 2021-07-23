@@ -1,7 +1,9 @@
 import React from 'react';
 import ShowCard from './ShowCard';
-import IMAGE_NOT_FOUND from '../../images/IMAGE_NOT_FOUND.jfif';
+
 import { FlexGrid } from '../styled';
+
+import IMAGE_NOT_FOUND from '../../images/IMAGE_NOT_FOUND.jfif';
 
 const ShowGrid = ({ data }) => {
   return (

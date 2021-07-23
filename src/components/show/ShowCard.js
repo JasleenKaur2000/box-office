@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import { StyledShowCard } from './ShowCard.styled';
 
 const ShowCard = ({ id, image, name, summary }) => {
@@ -9,8 +10,8 @@ const ShowCard = ({ id, image, name, summary }) => {
 
   return (
     <StyledShowCard>
-      <div>
-        <img className="img-wrapper" src={image} alt="show" />
+      <div className="img-wrapper">
+        <img src={image} alt="show" />
       </div>
 
       <h1>{name}</h1>
