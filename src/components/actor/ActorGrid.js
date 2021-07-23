@@ -1,10 +1,11 @@
 import React from 'react';
 import IMAGE_NOT_FOUND from '../../images/IMAGE_NOT_FOUND.jfif';
+import { FlexGrid } from '../styled';
 import ActorCard from './ActorCard';
 
 const ActorGrid = ({ data }) => {
   return (
-    <div>
+    <FlexGrid>
       {data.map(({ person }) => (
         <ActorCard
           key={person.id}
@@ -16,7 +17,7 @@ const ActorGrid = ({ data }) => {
           deathday={person.deathday}
         />
       ))}
-    </div>
+    </FlexGrid>
   );
 };
 
